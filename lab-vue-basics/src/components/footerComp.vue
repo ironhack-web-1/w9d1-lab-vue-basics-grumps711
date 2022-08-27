@@ -1,5 +1,5 @@
 <template>
-  <div>soy footer, la operacion es {{ operacion }}</div>
+  <div>soy footer, la operacion es {{ propertyComputed }}</div>
 </template>
 
 <script>
@@ -11,7 +11,7 @@ export default {
   },
   computed: {
     propertyComputed() {
-      return operacion;
+      return this.operacion;
     },
   },
 };
